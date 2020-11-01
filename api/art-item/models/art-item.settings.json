@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "art_items",
+  "info": {
+    "name": "artItem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "artist": {
+      "via": "art_items",
+      "model": "artist"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "art_items",
+      "dominant": true
+    },
+    "imgUrl": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "painting",
+        "sculpture",
+        "pottery",
+        "repousse",
+        "collage",
+        "watercolor",
+        "gouache",
+        "oil",
+        "acrylic"
+      ],
+      "required": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
