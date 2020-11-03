@@ -36,8 +36,8 @@
       "required": false
     },
     "art_items": {
-      "collection": "art-item",
-      "via": "artist"
+      "via": "artist",
+      "collection": "art-item"
     },
     "slug": {
       "type": "string",

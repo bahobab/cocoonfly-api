@@ -20,8 +20,8 @@
       "required": true
     },
     "artist": {
-      "via": "art_items",
-      "model": "artist"
+      "model": "artist",
+      "via": "art_items"
     },
     "tags": {
       "collection": "tag",
@@ -58,6 +58,10 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "forSale": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
