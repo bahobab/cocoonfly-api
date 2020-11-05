@@ -44,13 +44,16 @@
       "enum": [
         "painting",
         "sculpture",
+        "print",
         "pottery",
         "repousse",
         "collage",
         "watercolor",
         "gouache",
         "oil",
-        "acrylic"
+        "acrylic",
+        "etching",
+        "gicle"
       ],
       "required": true
     },
