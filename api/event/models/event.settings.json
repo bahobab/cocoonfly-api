@@ -27,12 +27,6 @@
       "type": "string",
       "required": true
     },
-    "media": {
-      "type": "component",
-      "repeatable": true,
-      "component": "images.img-urls",
-      "required": true
-    },
     "featured": {
       "type": "boolean",
       "default": false,
@@ -41,6 +35,11 @@
     "slug": {
       "type": "string",
       "required": true
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.media-list"
     }
   }
 }

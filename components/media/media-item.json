@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_media_media_items",
+  "info": {
+    "name": "mediaItem",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "mediaUrl": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "mediaType": {
+      "type": "enumeration",
+      "enum": [
+        "photo",
+        "video"
+      ],
+      "default": "photo"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

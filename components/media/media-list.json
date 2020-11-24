@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_media_media_lists",
+  "info": {
+    "name": "mediaList",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "mediaList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media.media-item"
+    }
+  }
+}
